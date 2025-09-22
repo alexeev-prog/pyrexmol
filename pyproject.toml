@@ -1,0 +1,22 @@
+[project]
+name = "pyrexmol"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Alexeev Bronislav", email = "alexeev.dev@mail.ru" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+pyrexmol = "pyrexmol:main"
+
+[tool.maturin]
+module-name = "pyrexmol._core"
+python-packages = ["pyrexmol"]
+python-source = "src"
+
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
