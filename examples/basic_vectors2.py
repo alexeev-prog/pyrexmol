@@ -1,4 +1,4 @@
-from pyrexmol import Vector2
+from pyrexmol.math import Vector2
 
 v1 = Vector2(3.0, 4.0)
 v2 = Vector2(1.0, 2.0)

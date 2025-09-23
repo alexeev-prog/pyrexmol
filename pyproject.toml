@@ -13,9 +13,9 @@ dependencies = []
 pyrexmol = "pyrexmol:main"
 
 [tool.maturin]
-module-name = "pyrexmol._core"
 python-packages = ["pyrexmol"]
 python-source = "src"
+module-name = "pyrexmol._core"
 
 [build-system]
 requires = ["maturin>=1.0,<2.0"]
