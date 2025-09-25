@@ -1,10 +1,19 @@
 pub mod math;
+// pub mod physics;
 
-use math::vector2::Vector2;
 use pyo3::prelude::*;
 
 #[pymodule]
 fn _core(m: &Bound<'_, PyModule>) -> PyResult<()> {
-    m.add_class::<Vector2>()?;
+    // Math module
+    let math_module = PyModule::new_bound(m.py(), "math")?;
+    math_module.add_class::<math::core::Vector2>()?;
+    m.add_submodule(&math_module)?;
+
+    // Physics module
+    // let physics_module = PyModule::new_bound(m.py(), "physics")?;
+    // physics_module.add_class::<physics::kinematics::UniformMotion>()?;
+    // m.add_submodule(&physics_module)?;
+
     Ok(())
 }
