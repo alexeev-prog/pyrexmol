@@ -1,3 +1,9 @@
+commit 379b46c5a18583de1a9cf3087f4b4396c26e8e99
+Author: Alexeev Bronislav <alexeev.dev@mail.ru>
+Date:   Thu Sep 25 21:21:49 2025 +0700
+
+    update structure
+
 commit 19b2091462860967f23c56cd99090c44fcfcdb08
 Author: Alexeev Bronislav <alexeev.dev@mail.ru>
 Date:   Tue Sep 23 21:09:14 2025 +0700

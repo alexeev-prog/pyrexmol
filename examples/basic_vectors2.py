@@ -1,15 +1,13 @@
 from pyrexmol.math import Vector2
+from pyrexmol.physics.kinematics import UniformAcceleratedMotion, UniformMotion
 
 v1 = Vector2(3.0, 4.0)
-v2 = Vector2(1.0, 2.0)
+print(f"Vector: {v1}, Magnitude: {v1.magnitude()}")
 
-print(f"v1 = {v1}")
-print(f"v2 = {v2}")
+motion1 = UniformMotion(initial_position=10.0, velocity=5.0)
+print(f"Position after 2s: {motion1.position_at_time(2.0)}")
 
-print(f"v1 + v2 = {v1 + v2}")
-print(f"v1 - v2 = {v1 - v2}")
-print(f"v1 * 2.0 = {v1 * 2.0}")
-print(f"v1 / 2.0 = {v1 / 2.0}")
-
-print(f"Magnitude of v1: {v1.magnitude()}")
-print(f"Dot product v1·v2: {v1.dot(v2)}")
+motion2 = UniformAcceleratedMotion(
+    initial_position=0.0, initial_velocity=10.0, acceleration=-9.5
+)
+print(f"Velocity after 1s: {motion2.velocity_at_time(1.0)}")
