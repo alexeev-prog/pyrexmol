@@ -1,3 +1,9 @@
+commit 56dc7261003d2e8d901a00b4f8294b3c75752d3e
+Author: Alexeev Bronislav <alexeev.dev@mail.ru>
+Date:   Thu Sep 25 21:33:37 2025 +0700
+
+    add physics.kinematics
+
 commit 379b46c5a18583de1a9cf3087f4b4396c26e8e99
 Author: Alexeev Bronislav <alexeev.dev@mail.ru>
 Date:   Thu Sep 25 21:21:49 2025 +0700
